@@ -1,0 +1,70 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Acceleraton_Message acc;
+  message Brake_Message brk;
+  message Gear_Status gear;
+  message Ignition_Key ign;
+  message Indicator_Lights_Message lr_lights;
+  message Vehicle_Motion vm;
+  message HeadLight_Message hlm;
+  message Sensor_Message rain;
+  message Steering_Wheel_Message steerw;
+}
+on start
+{
+  if(vm.Engine_Status == 1)
+  {
+    if(ign.Ignition_Key_Status == 2 || ign.Ignition_Key_Status == 3)
+    { 
+      output(vm);
+      output(hlm);
+      output(lr_lights);
+    }
+  }
+}
+
+on message Acceleraton_Message
+{
+  vm.Vehicle_Speed = this.Acceleration_Signal;
+}
+on message Brake_Message
+{
+  if(this.Brake_Signal == 1)
+  {
+    vm.Vehicle_Speed = 0;
+  }
+}
+on message Sensor_Message
+{
+  if(this.Rain_Sensor_Signal <= 3)
+  {
+    hlm.Fog_Beam_Signal = 1;
+  }
+  else{
+    hlm.Fog_Beam_Signal = 0;
+  }
+  if(this.Light_Sensor_Signal >= 3)
+  {
+     if(vm.Vehicle_Speed <= 50){
+      hlm.Low_Beam_Signal = 1;
+      hlm.High_Beam_Signal = 0;
+    }
+    else if(vm.Vehicle_Speed > 50){
+      hlm.Low_Beam_Signal = 1;
+      hlm.High_Beam_Signal = 1;
+    }
+  }
+  else
+  {
+    hlm.Low_Beam_Signal = 0;
+    hlm.High_Beam_Signal = 0;
+  }
+}
+
+

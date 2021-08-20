@@ -1,0 +1,76 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ Low_Beam_VT 1 "Low Beam Light ON" 0 "Low Beam Light OFF" ;
+VAL_TABLE_ High_Beam_VT 1 "High Beam Light ON" 0 "High Beam Light OFF" ;
+VAL_TABLE_ Fog_Beam_VT 1 "Fog Light ON" 0 "Fog Light OFF" ;
+VAL_TABLE_ Day_Night_VT 1 "Night Time" 0 "Day Time" ;
+
+
+BO_ 372 Steering_Wheel_Message: 2 Vector__XXX
+ SG_ Steering_Wheel_Signal : 0|16@1+ (1,0) [0|65535] "degrees" Vector__XXX
+
+BO_ 344 Sensor_Message: 8 Vector__XXX
+ SG_ Light_Sensor_Signal : 32|32@1- (1,0) [0|5] "Volts" Vector__XXX
+ SG_ Rain_Sensor_Signal : 0|32@1- (1,0) [0|5] "Volts" Vector__XXX
+
+BO_ 358 HeadLight_Message: 1 Vector__XXX
+ SG_ Low_Beam_Signal : 2|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
+ SG_ High_Beam_Signal : 1|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
+ SG_ Fog_Beam_Signal : 0|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+VAL_ 358 Low_Beam_Signal 1 "Low Beam Light ON" 0 "Low Beam Light OFF" ;
+VAL_ 358 High_Beam_Signal 1 "High Beam Light ON" 0 "High Beam Light OFF" ;
+VAL_ 358 Fog_Beam_Signal 1 "Fog Light ON" 0 "Fog Light OFF" ;
+SIG_VALTYPE_ 344 Light_Sensor_Signal : 1;
+SIG_VALTYPE_ 344 Rain_Sensor_Signal : 1;
+
