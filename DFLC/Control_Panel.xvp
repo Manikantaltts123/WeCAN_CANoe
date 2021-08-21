@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Control_Panel">
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl6" Children="Controls" ControlName="Light_Signal">
+      <Property Name="Name">TrackBarControl6</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">32, 271</Property>
+      <Property Name="Maximum">5</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="LargeChange">1</Property>
+      <Property Name="SmallChangeDouble">0.05</Property>
+      <Property Name="LargeChangeDouble">0.25</Property>
+      <Property Name="TickFrequencyDouble">0.05</Property>
+      <Property Name="MaximumDouble">5</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Light_Sensor;2;;;-1;;;</Property>
+      <Property Name="TabIndex">22</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text 7">
+      <Property Name="Name">StaticTextControl7</Property>
+      <Property Name="Size">78, 16</Property>
+      <Property Name="Location">50, 249</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Text">Light_Sensor</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl6" Children="Controls" ControlName="Static Text 6">
+      <Property Name="Name">StaticTextControl6</Property>
+      <Property Name="Size">90, 15</Property>
+      <Property Name="Location">346, 262</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Text">Steering Wheel</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl5" Children="Controls" ControlName="Static Text 5">
+      <Property Name="Name">StaticTextControl5</Property>
+      <Property Name="Size">82, 20</Property>
+      <Property Name="Location">446, 111</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Text">Gear Change</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 4">
+      <Property Name="Name">StaticTextControl4</Property>
+      <Property Name="Size">46, 20</Property>
+      <Property Name="Location">288, 111</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Text">Ignition</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">70, 20</Property>
+      <Property Name="Location">258, 11</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Text">Acceleration</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">40, 13</Property>
+      <Property Name="Location">65, 2</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Text">Brake</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">77, 20</Property>
+      <Property Name="Location">51, 145</Property>
+      <Property Name="BackColor">White</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Text">Rain_Sensor</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl5" Children="Controls" ControlName="Rain_Sensor">
+      <Property Name="Name">TrackBarControl5</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">32, 169</Property>
+      <Property Name="Maximum">5</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="LargeChange">1</Property>
+      <Property Name="SmallChangeDouble">0.05</Property>
+      <Property Name="LargeChangeDouble">0.25</Property>
+      <Property Name="TickFrequencyDouble">0.05</Property>
+      <Property Name="MaximumDouble">5</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Rain_Sensor;2;;;-1;;;</Property>
+      <Property Name="TabIndex">14</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl4" Children="Controls" ControlName="Steering Wheel">
+      <Property Name="Name">TrackBarControl4</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">339, 283</Property>
+      <Property Name="Maximum">180</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="MaximumDouble">180</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;16;Powertrain;;;Steering_Wheel;1;;;-1;;;</Property>
+      <Property Name="TabIndex">12</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl3" Children="Controls" ControlName="Gear">
+      <Property Name="Name">TrackBarControl3</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">431, 145</Property>
+      <Property Name="Maximum">3</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="LargeChange">3</Property>
+      <Property Name="LargeChangeDouble">3</Property>
+      <Property Name="MaximumDouble">3</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;16;Powertrain;;;Gear;1;;;-1;;;</Property>
+      <Property Name="TabIndex">11</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl2" Children="Controls" ControlName="Ignition">
+      <Property Name="Name">TrackBarControl2</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">264, 145</Property>
+      <Property Name="Maximum">3</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="BackColor">Gainsboro</Property>
+      <Property Name="LargeChange">3</Property>
+      <Property Name="LargeChangeDouble">3</Property>
+      <Property Name="MaximumDouble">3</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;16;Powertrain;;;Ignition;1;;;-1;;;</Property>
+      <Property Name="TabIndex">10</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ProgressBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="ProgressBarControl1" Children="Controls" ControlName="Progress Bar">
+      <Property Name="Name">ProgressBarControl1</Property>
+      <Property Name="Size">135, 28</Property>
+      <Property Name="Location">332, 11</Property>
+      <Property Name="OriginValue">0</Property>
+      <Property Name="Maximum">200</Property>
+      <Property Name="DecimalPlaces">1</Property>
+      <Property Name="ValueSize">28, 23</Property>
+      <Property Name="SymbolConfiguration">5;2;WeCAN_DBC;;Acceleraton_Message;Acceleration_Signal;1;CAN;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl1" Children="Controls" ControlName="Acceleration">
+      <Property Name="Name">TrackBarControl1</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">346, 43</Property>
+      <Property Name="Maximum">2210</Property>
+      <Property Name="MaximumDouble">2210</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;16;Powertrain;;;Acceleration;1;;;-1;;;</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="Switch/Indicator 2">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">72, 70</Property>
+      <Property Name="Location">80, 20</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="ImageFile">ControlRearLight.bmp</Property>
+      <Property Name="IsProportional">False</Property>
+      <Property Name="SymbolConfiguration">5;2;WeCAN_DBC;;Brake_Message;Brake_Signal;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">1</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControl1</Property>
+      <Property Name="Size">48, 70</Property>
+      <Property Name="Location">28, 20</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="ImageFile">ControlBreak.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;Powertrain;;;Brake;1;;;-1;;;</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">559, 372</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

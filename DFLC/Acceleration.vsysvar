@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="Powertrain" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="m/s^2" name="Acceleration" comment="To control the vehicle acceleration" bitcount="32" isSigned="false" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="200" maxValuePhys="200" />
+    </namespace>
+  </namespace>
+</systemvariables>

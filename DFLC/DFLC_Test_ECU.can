@@ -1,0 +1,137 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Gear_Status new_gear;
+  message Ignition_Key ign_key;
+  message Steering_Wheel_Message steerw;
+  message Sensor_Message sens;
+  message Brake_Message br;
+  message Acceleraton_Message acc;
+  int var=10, ign_var=0, gear_var=0;
+}
+
+on sysvar Powertrain::Brake
+{
+  br.Brake_Signal=@Powertrain::Brake;
+  output(br);
+}
+on sysvar Powertrain::Acceleration
+{
+  acc.Acceleration_Signal = @Powertrain::Acceleration;
+  output(acc);
+}
+on sysvar Powertrain::Ignition
+{
+  ign_key.Ignition_Key_Status = @Powertrain::Ignition;
+  output(ign_key);
+}
+on sysvar Powertrain::Gear
+{
+  new_gear.Gear_State =  @Powertrain::Gear;
+  output(new_gear);
+}
+on sysvar Powertrain::Steering_Wheel
+{
+  steerw.Steering_Wheel_Signal = @Powertrain::Steering_Wheel;
+  output(steerw);
+}
+on sysvar BCM::Rain_Sensor
+{
+  sens.Rain_Sensor_Signal = @BCM::Rain_Sensor;
+  output(sens);
+}
+on sysvar BCM::Light_Sensor
+{
+  sens.Light_Sensor_Signal = @BCM::Light_Sensor;
+  output(sens);
+}
+
+
+
+
+
+
+
+
+
+
+
+//on key 'a'
+//{
+//  if(var < 2000)
+//  {
+//    var = var + 10;
+//    acc.Acceleration_Signal=var;
+//    output(acc);
+//  }
+//}
+//on key 'd'
+//{
+//  if(var > 0)
+//  {
+//    var = var - 10;
+//    acc.Acceleration_Signal = var;
+//    output(acc);
+//  }
+//}
+//on key 'b'
+//{
+//  if(br.Brake_Signal == 1)
+//  {
+//    br.Brake_Signal = 0;
+//  }
+//  else{
+//    br.Brake_Signal = 1;
+//  }
+//  output(br);
+//}
+//on key 's'
+//{
+//  sens.Light_Sensor_Signal = 4;
+//  sens.Rain_Sensor_Signal = 4;
+//  output(sens);
+//}
+//on key 'q'
+//{
+//  steerw.Steering_Wheel_Signal = 59;
+//  output(steerw);
+//}
+//on key 'w'
+//{
+//  steerw.Steering_Wheel_Signal = 120;
+//  output(steerw);
+//}
+//on key 'e'
+//{
+//  steerw.Steering_Wheel_Signal = 90;
+//  output(steerw);
+//}
+//on key 'i'
+//{
+//  if(ign_var > 3)
+//  {
+//    ign_var = 0;
+//  }
+//  else{
+//    ign_key.Ignition_Key_Status = ign_var;
+//    ign_var = ign_var + 1;
+//  }
+//  output(ign_key);
+//}
+//on key 'g'
+//{
+//  if(gear_var > 3)
+//  {
+//    gear_var = 0;
+//  }
+//  else{
+//    new_gear.Gear_State = gear_var;
+//    gear_var = gear_var + 1;
+//  }
+//  output(new_gear);
+//}

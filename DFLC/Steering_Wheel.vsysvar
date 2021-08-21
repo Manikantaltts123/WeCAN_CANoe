@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="Powertrain" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="degrees" name="Steering_Wheel" comment="For steering wheel motion" bitcount="32" isSigned="false" encoding="65001" type="int" startValue="90" minValue="0" minValuePhys="0" maxValue="180" maxValuePhys="180" />
+    </namespace>
+  </namespace>
+</systemvariables>

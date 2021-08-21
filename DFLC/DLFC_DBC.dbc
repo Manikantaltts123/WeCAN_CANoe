@@ -34,26 +34,34 @@ NS_ :
 BS_:
 
 BU_:
+VAL_TABLE_ Front_Parking_VT 1 "Parking lights ON" 0 "Parking lights OFF" ;
+VAL_TABLE_ Front_Right_VT 1 "Right Indicator ON" 0 "Right Indicator OFF" ;
+VAL_TABLE_ Front_Left_VT 1 "Left Indicator OFF" 0 "Left Indicator ON" ;
 VAL_TABLE_ Low_Beam_VT 1 "Low Beam Light ON" 0 "Low Beam Light OFF" ;
 VAL_TABLE_ High_Beam_VT 1 "High Beam Light ON" 0 "High Beam Light OFF" ;
 VAL_TABLE_ Fog_Beam_VT 1 "Fog Light ON" 0 "Fog Light OFF" ;
-VAL_TABLE_ Day_Night_VT 1 "Night Time" 0 "Day Time" ;
 
 
-BO_ 372 Steering_Wheel_Message: 2 Vector__XXX
- SG_ Steering_Wheel_Signal : 0|16@1+ (1,0) [0|65535] "degrees" Vector__XXX
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Front_Parking_Indicator : 0|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
+ SG_ Front_Right_Signal : 0|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
+ SG_ Front_Left_Signal : 0|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
 
-BO_ 344 Sensor_Message: 8 Vector__XXX
+BO_ 338 Steering_Wheel_Message: 2 Vector__XXX
+ SG_ Steering_Wheel_Signal : 0|16@1+ (1,0) [0|65525] "Float" Vector__XXX
+
+BO_ 336 Sensor_Message: 8 Vector__XXX
  SG_ Light_Sensor_Signal : 32|32@1- (1,0) [0|5] "Volts" Vector__XXX
  SG_ Rain_Sensor_Signal : 0|32@1- (1,0) [0|5] "Volts" Vector__XXX
 
-BO_ 358 HeadLight_Message: 1 Vector__XXX
+BO_ 337 HeadLight_Message: 1 Vector__XXX
  SG_ Low_Beam_Signal : 2|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
  SG_ High_Beam_Signal : 1|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
  SG_ Fog_Beam_Signal : 0|1@1+ (1,0) [0|1] "Boolean" Vector__XXX
 
 
 
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BU_  "NodeLayerModules" STRING ;
 BA_DEF_ BU_  "ECU" STRING ;
@@ -68,9 +76,12 @@ BA_DEF_DEF_  "CANoeJitterMax" 0;
 BA_DEF_DEF_  "CANoeJitterMin" 0;
 BA_DEF_DEF_  "CANoeDrift" 0;
 BA_DEF_DEF_  "CANoeStartDelay" 0;
-VAL_ 358 Low_Beam_Signal 1 "Low Beam Light ON" 0 "Low Beam Light OFF" ;
-VAL_ 358 High_Beam_Signal 1 "High Beam Light ON" 0 "High Beam Light OFF" ;
-VAL_ 358 Fog_Beam_Signal 1 "Fog Light ON" 0 "Fog Light OFF" ;
-SIG_VALTYPE_ 344 Light_Sensor_Signal : 1;
-SIG_VALTYPE_ 344 Rain_Sensor_Signal : 1;
+VAL_ 3221225472 Front_Parking_Indicator 1 "Parking lights ON" 0 "Parking lights OFF" ;
+VAL_ 3221225472 Front_Right_Signal 1 "Right Indicator ON" 0 "Right Indicator OFF" ;
+VAL_ 3221225472 Front_Left_Signal 1 "Left Indicator OFF" 0 "Left Indicator ON" ;
+VAL_ 337 Low_Beam_Signal 1 "Low Beam Light ON" 0 "Low Beam Light OFF" ;
+VAL_ 337 High_Beam_Signal 1 "High Beam Light ON" 0 "High Beam Light OFF" ;
+VAL_ 337 Fog_Beam_Signal 1 "Fog Light ON" 0 "Fog Light OFF" ;
+SIG_VALTYPE_ 336 Light_Sensor_Signal : 1;
+SIG_VALTYPE_ 336 Rain_Sensor_Signal : 1;
 

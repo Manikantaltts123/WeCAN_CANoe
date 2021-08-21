@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="Powertrain" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="Boolean" name="Brake" comment="This s a system variable for the brake functionality of a car" bitcount="32" isSigned="false" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1">
+        <valuetable name="Brake" definesMinMax="true">
+          <valuetableentry value="0" lowerBound="0" upperBound="0" description="Brake_not_applied" displayString="Brake_not_applied" />
+          <valuetableentry value="1" lowerBound="1" upperBound="1" description="Brake_Applied" displayString="Brake_Applied" />
+        </valuetable>
+      </variable>
+    </namespace>
+  </namespace>
+</systemvariables>
