@@ -1,0 +1,47 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Blind_Spot bs;
+  message Door_Lock dl;
+  message Left_Mirror lm;
+  message Right_Mirror rm;
+  message Mirror_Folding mf;
+}
+
+on sysvar Radar::Left_Approach
+{
+  output(bs);
+}
+
+on sysvar Radar::Right_Approach
+{
+  output(bs);
+}
+
+on sysvar BCM::Door_Lock
+{
+  dl.Door_Status = @BCM::Door_Lock;
+  output(dl);
+}
+
+on sysvar BCM::Mirror_Select
+{
+  if (@BCM::Mirror_Select == 1)
+  {
+    output(lm);
+  }
+  else if (@BCM::Mirror_Select == 2)
+  {
+    output(rm);
+  }
+}
+
+on sysvar BCM::Fold
+{
+  output(mf);
+}

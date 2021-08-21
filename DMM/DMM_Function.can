@@ -1,0 +1,86 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Ignition_Key ign;
+  message Blind_Spot bs;
+  message Door_Lock dl;
+  message Left_Mirror lm;
+  message Right_Mirror rm;
+  message Mirror_Folding mf;
+  timer wait;
+//  int functioning = 0;
+}
+on start 
+{
+  ign.Ignition_Key_Status = 2;
+  output(ign);
+}
+
+on message Mirror_Folding
+{
+  if(ign.Ignition_Key_Status == 0 && dl.Door_Status == 0){
+    setTimer(wait,5);
+  }
+  else if (ign.Ignition_Key_Status >= 2 && @BCM::Fold == 1)
+  {
+    mf.Folding = 1;
+    output(mf);
+  }
+}
+
+on timer wait
+{
+  mf.Folding = 1;
+  output(mf);
+}
+
+on message Blind_Spot
+{
+  if (@Radar::Left_Approach == 1)
+  {bs.Blind_Spot = 1;}
+  else if (@Radar::Right_Approach == 1)
+  {bs.Blind_Spot = 2;}
+//  else if (@Radar::Left_Approach == 1 && @Radar::Right_Approach == 1)
+//  {bs.Blind_Spot = 3;}
+  else
+  {bs.Blind_Spot = 0;}
+  
+  output(bs);
+}
+
+on message Left_Mirror
+{
+  if(@BCM::Left == 1)
+  {lm.Movement = 3;}
+  else if(@BCM::Right == 1)
+  {lm.Movement = 4;}
+  else if(@BCM::Up == 1)
+  {lm.Movement = 1;}
+  else if(@BCM::Down == 1)
+  {lm.Movement = 2;}
+  else
+  {lm.Movement = 0;}
+  
+  output(lm);
+}
+
+on message Right_Mirror
+{
+  if(@BCM::Left == 1)
+  {rm.Movement = 3;}
+  else if(@BCM::Right == 1)
+  {rm.Movement = 4;}
+  else if(@BCM::Up == 1)
+  {rm.Movement = 1;}
+  else if(@BCM::Down == 1)
+  {rm.Movement = 2;}
+  else
+  {rm.Movement = 0;}
+  
+  output(rm);
+}

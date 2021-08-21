@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="DMM_Control">
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl1" Children="Controls" ControlName="Mirror_Select">
+      <Property Name="Name">TrackBarControl1</Property>
+      <Property Name="Size">132, 47</Property>
+      <Property Name="Location">43, 34</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="Maximum">2</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="BackColor">DimGray</Property>
+      <Property Name="LargeChange">2</Property>
+      <Property Name="LargeChangeDouble">2</Property>
+      <Property Name="MaximumDouble">2</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Mirror_Select;1;;;-1;;;</Property>
+      <Property Name="TabIndex">8</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl8" ControlName="Right_Approach">
+      <Property Name="Name">SwitchControl8</Property>
+      <Property Name="Size">79, 36</Property>
+      <Property Name="Location">349, 306</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="ImageFile">Approach_Button.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;Radar;;;Right_Approach;1;;;-1;;;</Property>
+      <Property Name="TabIndex">7</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl7" ControlName="Left_Approach">
+      <Property Name="Name">SwitchControl7</Property>
+      <Property Name="Size">79, 36</Property>
+      <Property Name="Location">178, 306</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="ImageFile">Approach_Button.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;Radar;;;Left_Approach;1;;;-1;;;</Property>
+      <Property Name="TabIndex">6</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl6" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControl6</Property>
+      <Property Name="Size">27, 25</Property>
+      <Property Name="Location">401, 44</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="ImageFile">Lock_Unlock.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Door_Lock;1;;;-1;;;</Property>
+      <Property Name="TabIndex">5</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl5" ControlName="Folding">
+      <Property Name="Name">SwitchControl5</Property>
+      <Property Name="Size">87, 77</Property>
+      <Property Name="Location">264, 22</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="ImageFile">Fold_Switch.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Fold;1;;;-1;;;</Property>
+      <Property Name="TabIndex">4</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl4" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControl4</Property>
+      <Property Name="Size">55, 61</Property>
+      <Property Name="Location">80, 126</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="ImageFile">Up.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Up;1;;;-1;;;</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl3" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControl3</Property>
+      <Property Name="Size">55, 61</Property>
+      <Property Name="Location">80, 246</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="ImageFile">Down.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Down;1;;;-1;;;</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">55, 61</Property>
+      <Property Name="Location">139, 186</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="ImageFile">Right.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Right;1;;;-1;;;</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControl1</Property>
+      <Property Name="Size">55, 61</Property>
+      <Property Name="Location">21, 186</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="ImageFile">Left.bmp</Property>
+      <Property Name="SymbolConfiguration">5;16;BCM;;;Left;1;;;-1;;;</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">473, 363</Property>
+    <Property Name="BackColor">LightSlateGray</Property>
+  </Object>
+</Panel>
